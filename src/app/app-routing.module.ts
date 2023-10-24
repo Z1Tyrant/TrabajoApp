@@ -79,13 +79,14 @@ const routes: Routes = [
     path: 'perfil-all',
     loadChildren: () => import('./perfiles/perfil-all/perfil-all.module').then( m => m.PerfilAllPageModule)
   },
-  {
-    path: 'photo',
-    loadChildren: () => import('./photo/photo.module').then( m => m.PhotoPageModule)
-  },
+  
   {
     path: 'geo',
     loadChildren: () => import('./geo/geo.module').then( m => m.GeoPageModule)
+  },
+  {
+    path: 'camera',
+    loadChildren: () => import('./camera/camera.module').then( m => m.CameraPageModule)
   },
 
 

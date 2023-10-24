@@ -1,0 +1,12 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Cámara
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-button expand="full" (click)="takePicture()">Tomar Foto</ion-button>
+  <ion-img *ngIf="photo" [src]="photo" class="photo"></ion-img>
+</ion-content>
