@@ -10,4 +10,8 @@
       <ion-title size="large">photo</ion-title>
     </ion-toolbar>
   </ion-header>
+  <img src="{{imageSource}}" style="width: 400px;">
+  <ion-button (click)="takePhoto()" expand="block" fill="clear" shape="round">
+    camera
+  </ion-button>
 </ion-content>
